@@ -1,0 +1,15 @@
+# Ignore whole bin directory
+bin/
+# Ignore generated resources (R.java)
+gen/
+
+# Ignore compiled source
+########################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.apk
+

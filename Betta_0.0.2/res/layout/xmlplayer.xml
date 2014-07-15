@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    >
+    
+    <RelativeLayout 
+	    android:id="@+id/relativeLayoutTela" 
+	    android:layout_height="fill_parent" 
+	    android:layout_width="fill_parent"
+	    android:layout_gravity="center"
+	>
+	
+		<VideoView
+		   	android:id="@+id/videoView1"
+		   	android:layout_width="fill_parent" 
+		   	android:layout_height="fill_parent"
+		   	android:layout_weight="1"
+		   	android:layout_gravity="center"
+		   	android:layout_centerInParent="true"
+		>
+		</VideoView>
+		
+		<RelativeLayout
+		  	android:id="@+id/relativeLayoutVolume"
+		   	android:layout_height="wrap_content"
+		   	android:layout_width="fill_parent"
+		   	android:gravity="center_horizontal"		   	
+	    	android:background="#1C1C1C"
+	    	android:visibility="gone"
+	    	android:layout_alignParentTop="true"
+		>
+		    	
+		   	<Button
+			    android:id="@+id/buttonVolume"
+			    android:background="@drawable/volume_1"
+			    android:layout_height="48px" 
+			    android:layout_width="48px"
+		    	android:layout_marginTop="5px"
+		 	  	android:layout_centerInParent="true"
+		 	  	android:onClick="volumeOff"
+			>
+			</Button>
+
+			<SeekBar 
+			   	android:id="@+id/progressVolume"
+			   	android:layout_width="260px"
+			   	android:layout_height="18px"
+			   	android:progress="0"
+			   	android:secondaryProgress="0"
+			   	style="@android:style/Widget.ProgressBar.Horizontal"
+			   	android:layout_gravity="center"
+			   	android:progressDrawable="@drawable/progress_drawable"
+			   	android:layout_marginLeft="15px"
+			   	android:layout_toRightOf="@+id/buttonVolume"
+			   	android:layout_marginTop="20px"
+			>	       
+			</SeekBar>
+		   		 
+		</RelativeLayout>	
+    
+		<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/linearLayoutBottom"
+	    android:background="#1C1C1C"
+	    android:orientation="vertical"
+	    android:visibility="gone"
+	    android:layout_alignParentBottom="true"
+	    >
+	    
+		    <RelativeLayout
+		    	android:id="@+id/relativeLayoutButtons"
+		    	android:layout_height="50px"
+		    	android:layout_width="fill_parent"
+		    	android:gravity="center_horizontal"
+		    >
+		    	
+		    	<Button
+			    	android:background="@drawable/play_button"
+			    	android:id="@+id/buttonPlay"
+			    	android:layout_height="48px" 
+			    	android:layout_width="48px"
+			    	android:layout_marginTop="5px"
+			    	android:onClick="playMedia"
+			    	>
+		   		</Button>
+		   		
+		   		<Button
+			    	android:background="@drawable/pause_button"
+			    	android:id="@+id/buttonPause"
+			    	android:layout_height="48px"
+			    	android:layout_width="48px"
+			    	android:layout_marginTop="5px"
+			    	android:onClick="playMedia"
+			    	android:visibility="gone"
+			    	android:layout_toRightOf="@+id/buttonPlay"
+			    	>
+		   		</Button>
+		   		
+		   		<Button
+			    	android:background="@drawable/stop_button"
+			    	android:id="@+id/buttonStop"
+			    	android:layout_height="48px" 
+			    	android:layout_width="48px"
+			    	android:layout_marginTop="5px"
+			    	android:onClick="stopMedia"
+			    	android:layout_toRightOf="@+id/buttonPause"
+			    	>
+		   		</Button>
+				 
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		    	android:id="@+id/relativeLayoutTempo"
+		    	android:layout_height="24px"
+		    	android:layout_width="fill_parent"
+		    >
+		    
+		    	<TextView 
+			    	android:layout_height="fill_parent"
+			    	android:id="@+id/timeElapsed"
+			    	android:layout_width="wrap_content" 
+			    	android:text="--:--"
+			    	android:textColor="#007af0"
+			    	android:textSize="16px"
+			    	android:typeface="normal"
+			    	android:textStyle="bold"
+			    	android:layout_marginLeft="15px"
+			    	>
+			    </TextView>
+		    	    
+			    <TextView 
+			    	android:layout_height="fill_parent"
+			    	android:id="@+id/time"
+			    	android:layout_width="wrap_content" 
+			    	android:text="--:--"
+			    	android:textColor="#007af0"
+			    	android:textSize="16px"
+			    	android:typeface="normal"
+			    	android:textStyle="bold"
+			    	android:layout_alignParentRight="true"
+			    	android:layout_marginRight="15px"
+			    >
+			    </TextView>
+		    
+		    </RelativeLayout>
+		    
+			    <SeekBar 
+			    	android:id="@+id/progressBar"
+			    	android:layout_width="fill_parent"
+			    	android:layout_height="20px"
+			    	android:progress="0"
+			    	android:secondaryProgress="0"
+			    	style="@android:style/Widget.ProgressBar.Horizontal"
+			    	android:layout_gravity="center"
+			    	android:progressDrawable="@drawable/progress_drawable"
+			    	android:layout_marginLeft="5px"
+			    	android:layout_marginRight="5px"
+			    	android:layout_marginBottom="10px"
+			    >	       
+			    </SeekBar>
+			
+		</LinearLayout>
+	
+	</RelativeLayout> 
+    
+</LinearLayout>

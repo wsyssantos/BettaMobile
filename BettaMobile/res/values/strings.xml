@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">BettaMoblile</string>
+	<string name="emptyString"></string>
+	<string name="userName">Usuário</string>
+	<string name="userPassword">Senha</string>
+	<string name="saveUserInformation">Salvar Informações?</string>
+	<string name="login">Entrar</string>
+	<string name="save">Cadastrar</string>	
+	<string name="categorias">Gênero</string>	
+	<string name="busca">Busca</string>	
+	<string name="listas">Favoritos</string>	
+	<string name="duracao">Duração: </string>	
+	<string name="assistir">Assistir</string>	
+	<string name="detalhes">Detalhes</string>	
+	<string name="ano">Ano:</string>
+	<string name="nomeCategoria">Gênero: </string>
+	<string name="myList">Minha Lista</string>
+	<string name="direcao">Direção</string>
+	<string name="elenco">Elenco</string>
+	<string name="sinopse">Sinopse</string>
+	<string name="incluirPLaylist">Favorito</string>
+	
+	<string name="buscaFilmes">Busca</string>
+	<string name="hintNomeFilme">Digite o Nome do Filme</string>
+	
+	<string name="searchDescription">Busca</string>
+</resources>
